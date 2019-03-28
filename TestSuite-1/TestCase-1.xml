@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="1e5a7de6-1b0b-4c47-8355-d6ef0c52a6ba" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="1e5a7de6-1b0b-4c47-8355-d6ef0c52a6bafileName">TestCase-1</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="restrequest" name="Profile - Londis-Login" id="a2745f5c-4664-4cba-9e2c-c73ac35dbd3e">
+    <con:settings/>
+    <con:config service="https://londis-dot-ubamarket-test.appspot.com" resourcePath="/api/v1/user/profile" methodName="Profile" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Profile - Londis-Login" id="75ef1cff-a181-4410-ac41-abe9c2bdda52" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://londis-dot-ubamarket-test.appspot.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://londis-dot-ubamarket-test.appspot.com/api/v1/user/profile</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:parameters>
+          <con:entry key="access_token" value="9u7HUPw6lqEGYe1PlT2KLRjcTeduHKSCduMBCADS9diQhT9j8batpT4WtHrXQ5631274764992512P1552560084590Z"/>
+          <con:entry key="Authorization" value="bearer 9u7HUPw6lqEGYe1PlT2KLRjcTeduHKSCduMBCADS9diQhT9j8batpT4WtHrXQ5631274764992512P1552560084590Z"/>
+          <con:entry key="Content-Type" value="application/json"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>access_token</con:entry>
+          <con:entry>Authorization</con:entry>
+          <con:entry>Content-Type</con:entry>
+        </con:parameterOrder>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

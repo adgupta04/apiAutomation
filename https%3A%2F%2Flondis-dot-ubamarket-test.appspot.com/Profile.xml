@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="Profile" path="/api/v1/user/profile" id="b106b19f-f7d6-4634-bb3b-088caa313619" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b106b19f-f7d6-4634-bb3b-088caa313619fileName">Profile</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Profile" id="c1f6e977-c9f0-42c5-b8f8-205493eea6ff" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>access_token</con:name>
+        <con:value>9u7HUPw6lqEGYe1PlT2KLRjcTeduHKSCduMBCADS9diQhT9j8batpT4WtHrXQ5631274764992512P1552560084590Z</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>9u7HUPw6lqEGYe1PlT2KLRjcTeduHKSCduMBCADS9diQhT9j8batpT4WtHrXQ5631274764992512P1552560084590Z</con:default>
+        <con:path xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <con:description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Authorization</con:name>
+        <con:value>bearer 9u7HUPw6lqEGYe1PlT2KLRjcTeduHKSCduMBCADS9diQhT9j8batpT4WtHrXQ5631274764992512P1552560084590Z</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <con:description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Content-Type</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <con:description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json;charset=utf-8</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element xmlns:prof="https://londis-dot-ubamarket-test.appspot.com/api/v1/user/profile">prof:Response</con:element>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Londis-Login" id="75ef1cff-a181-4410-ac41-abe9c2bdda52" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://londis-dot-ubamarket-test.appspot.com</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="access_token" value="9u7HUPw6lqEGYe1PlT2KLRjcTeduHKSCduMBCADS9diQhT9j8batpT4WtHrXQ5631274764992512P1552560084590Z"/>
+        <con:entry key="Authorization" value="bearer 9u7HUPw6lqEGYe1PlT2KLRjcTeduHKSCduMBCADS9diQhT9j8batpT4WtHrXQ5631274764992512P1552560084590Z"/>
+        <con:entry key="Content-Type" value="application/json"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>access_token</con:entry>
+        <con:entry>Authorization</con:entry>
+        <con:entry>Content-Type</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>
